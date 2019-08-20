@@ -55,13 +55,13 @@ textarea {
 /* ==========================================================================
    SiggyWork's custom styles
    ========================================================================== */
-   
+
 body {
-  font: 16px Helvetica, Arial, sans-serif;
-  background-color: #f3ebcc;
-  color: #444;
-  text-align: center;
-  overflow: hidden;
+    font: 16px Helvetica, Arial, sans-serif;
+    background-color: #f3ebcc;
+    color: #444;
+    text-align: center;
+    overflow: hidden;
 }
 
 .card.container {
@@ -69,9 +69,9 @@ body {
     bottom: 0px;
     left: 0%;
     margin: auto auto 0px;
-    width:100%;
+    width: 100%;
     height: auto;
-    /* display: none; */
+    display: none;
 }
 
 svg {
@@ -81,44 +81,58 @@ svg {
 
 
 /* Inline SVG styles */
-.s0{
-    fill:#F26F31;    /* red */
-    stroke:#CE5A2C;
+.s0 {
+    fill: #F26F31;
+    /* red */
+    stroke: #CE5A2C;
 }
-.s1{
-    fill:#D32B28;    /* brown */
-    stroke:#B2272A;
+
+.s1 {
+    fill: #D32B28;
+    /* brown */
+    stroke: #B2272A;
 }
-.s2{
-    fill:#F05A28;    /* orange */
-    stroke:#C64522;
+
+.s2 {
+    fill: #F05A28;
+    /* orange */
+    stroke: #C64522;
 }
-.s3{
-    fill:#D32B28;
+
+.s3 {
+    fill: #D32B28;
 }
-.s4{
-    fill:#231F20;
+
+.s4 {
+    fill: #231F20;
 }
-.s5{
-    fill:#FFF;
+
+.s5 {
+    fill: #FFF;
 }
-.s6{
-    fill:#D65A32;
+
+.s6 {
+    fill: #D65A32;
 }
-.s7{
-    fill:#F5E1BE;
+
+.s7 {
+    fill: #F5E1BE;
 }
-.s8{
-    fill:#9E5A39;
+
+.s8 {
+    fill: #9E5A39;
 }
-.s9{
-    fill:#F26F31;
+
+.s9 {
+    fill: #F26F31;
 }
-.s10{
-    fill:#B2272A;
+
+.s10 {
+    fill: #B2272A;
 }
-.s11{
-    fill:#F05A28;
+
+.s11 {
+    fill: #F05A28;
 }
 
 
@@ -137,16 +151,12 @@ svg {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-
-}
+@media only screen and (min-width: 35em) {}
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
-}
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
 
 /* ==========================================================================
    Helper classes
@@ -201,6 +211,7 @@ svg {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
@@ -216,11 +227,11 @@ svg {
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: " ("attr(title) ")";
     }
 
     a[href^="#"]:after,
