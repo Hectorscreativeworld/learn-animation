@@ -175,18 +175,41 @@
         y: '+=1200',
         autoAlpha: 1,
         onComplete: repeatFall,
+        onCompleteParams: ['#brownLeaf'],
         ease: Linear.easeNone
       })
-      function repeatFall() {
+      TweenMax.to('#redLeaf', 10 + Math.random() * 10, {
+        y: '+=1200',
+        autoAlpha: 1,
+        onComplete: repeatFall,
+        onCompleteParams: ['#redLeaf'],
+        ease: Linear.easeNone
+      })
+
+      TweenMax.to('#orangeLeaf', 10 + Math.random() * 10, {
+        y: '+=1200',
+        autoAlpha: 1,
+        onComplete: repeatFall,
+        onCompleteParams: ['#orangeLeaf'],
+        ease: Linear.easeNone
+      })
+
+      function repeatFall(leafId) {
         var range = Math.random() * 800,
           offset = 400,
           newXPosition = range - offset
 
-        TweenMax.set($backFallingLeaves, { y: -100, autoAlpha: 0.2 })
-        TweenMax.to('#brownLeaf', 10 + Math.random() * 10, {
+        TweenMax.set(leafId, {
+          x: newXPosition,
+          y: -100,
+          autoAlpha: 0.2,
+          rotation: Math.random() * 360
+        })
+        TweenMax.to(leafId, 10 + Math.random() * 10, {
           y: '+=1200',
           autoAlpha: 1,
           onComplete: repeatFall,
+          onCompleteParams: [leafId],
           ease: Linear.easeNone
         })
       }
